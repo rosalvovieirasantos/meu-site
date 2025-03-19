@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+
+/* Resetando estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(255, 246, 198, 0.795);
+    box-shadow: 5px 5px 15px #012e40ab;
+    width: 900px;
+    border-radius: 15px;
+    margin: auto;
+}
+
+/* Estilizando o cabeçalho */
+header {
+    background: linear-gradient(to top, #5566ff, #6c8df8, rgb(153, 188, 252), rgb(184, 235, 255), rgb(228, 253, 255), rgb(242, 247, 255));
+    text-align: center;
+}
+
+.topo img {
+    max-width: 200px;
+}
+
+.container {
+    display: flex;
+    padding-right: 25px;
+    padding-left: 25px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+h1,h3,li>a{
+    font-family: 'suse';
+}
+
+li>a{
+    font-weight: 600;
+}
+.texto h1 {
+    color: #0e22dd;
+}
+
+.texto h3 {
+    color: #34394bce;
+    margin-top: 10px;
+}
+
+.minha-foto img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-bottom: 5px;
+}
+
+/* Estilizando o menu */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 2px 50px 0 0;
+}
+
+nav ul li a {
+    color: rgb(3, 4, 59);
+    text-decoration: none;
+    padding: 5px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: rgb(246, 254, 255);
+    border-radius: 10px; /* Arredonda as bordas ao passar o mouse */
+}
+
+/* Ícones sociais */
+.social-icons a {
+    color: rgb(3, 4, 59);
+    font-size: 1.5rem;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: white; /* Texto branco */
+    border-radius: 10px;
+}
+
+main > article > h2{
+    font-family: 'suse';
+}
+
+main{
+    margin: 10px 20px;
+}
+h2{
+    font-size: 1.7em;
+    color: rgb(21, 21, 175);
+    padding-left: 2px;
+    margin: 20px 0 15px 0;
+    font-weight: 700;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    text-indent: 30px;
+    padding: 5px 0;
+}
+
+main > article > p > a{
+    font-weight: bold;
+    text-decoration: none;
+    color: rgba(13, 75, 245, 0.966)
+}
+p > a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    width: 100%;
+    background-color: #afc0ffbe;
+    border-radius: 0 0 15px 15px;
+}
+footer > p{
+    font-size: 0.8em;
+    padding: 5px;
+    margin-left: -30px;
+}
+
+.rodape > p{
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    body {
+        width: 100%; /* Ocupa toda a largura da tela */
+        border-radius: 0; /* Remove bordas arredondadas em telas pequenas */
+        box-shadow: none; /* Remove sombras para um design mais limpo */
+        padding: 10px; /* Reduz o padding para economizar espaço */
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .texto {
+        text-align: center;
+    }
+
+    .minha-foto img {
+        margin: 20px 0;
+    }
+
+    nav{
+        flex-direction: row;
+    }
+
+    nav ul.social-icons {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 2px 0;
+    }
+
+    nav ul li a{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+}
+
+@media (max-width: 480px){
+
+    body {
+        width: 100%; /* Ocupa toda a largura da tela */
+        border-radius: 0; /* Remove bordas arredondadas em telas pequenas */
+        box-shadow: none; /* Remove sombras para um design mais limpo */
+        padding: 10px; /* Reduz o padding para economizar espaço */
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .texto {
+        text-align: center;
+    }
+
+    .minha-foto img {
+        margin: 20px 0;
+    }
+
+    nav{
+        flex-direction: row;
+    }
+
+    nav ul.social-icons {
+        flex-direction: row;
+        width: 100%;
+    }
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 2px 0;
+    }
+
+    nav ul li a{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+    }
+}

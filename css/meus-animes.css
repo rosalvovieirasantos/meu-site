@@ -1,0 +1,135 @@
+/* Fonte personalizada do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+        
+/* Estilos gerais para o corpo da página */
+body{
+    width: 800px; /* Largura padrão da página */
+    margin: auto; /* Centraliza a página */
+    font-family: 'suse', sans-serif; /* Fonte personalizada */
+    background-color: #f4f4f9; /* Cor de fundo suave */
+    border-radius: 20px; /* Bordas arredondadas */
+    border: 1px solid #7d7d7d; /* Borda fina e discreta */
+    padding: 20px; /* Padding interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilo para os títulos principais */
+h1 {
+    margin-top: 20px 0;
+    padding: 20px 0 0 0;
+    font-size: 2.1em;
+    text-align: center;
+    color: #0d3b66; /* Cor do título */
+}
+h2{
+    margin-top: 20px;
+    color: #0d3b66; /* Cor do título */
+}
+
+.sub-titulo{
+    padding: 5px 10px;
+    margin: 10px 0;
+}
+
+/* Estilo para parágrafos */
+p{
+    text-indent: 20px; /* Indenta o início do parágrafo */
+    text-align: justify; /* Alinha o texto de forma justificada */
+    line-height: 1.6; /* Aumenta o espaçamento entre as linhas para facilitar a leitura */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    font-weight: 400;
+    
+}
+
+/* Estilo para a lista ordenada (ol) */
+ol{
+   padding: 0 10px;
+;
+    font-size: 1.1em;
+}
+
+/* Estilos específicos para os itens da lista */
+li{
+    margin-bottom: 20px; /* Espaço entre os itens */
+}
+
+.imagens{
+    text-align: center; /* Centraliza a imagem */
+    margin-top: 15px; /* Espaçamento superior */
+}
+
+.imagens > img{
+    margin: 15px 0;
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    /* Faz a imagem ocupar toda a largura disponível */
+    /* Limita a largura máxima da imagem */
+    /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas na imagem */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra suave na imagem */
+}
+
+/* Media query para telas pequenas (celulares e dispositivos móveis) */
+@media (max-width: 700px) {
+    body{
+        width: 100%; /* A página ocupa toda a largura da tela */
+        border-radius: 0; /* Remove bordas arredondadas */
+        padding: 15px; /* Ajusta o padding para otimizar o espaço */
+        box-shadow: none; /* Remove a sombra para uma aparência mais limpa */
+        overflow-x: hidden; /* Remove a barra de rolagem horizontal */
+    }
+
+    .imagens > img{
+        width: 90%; /* A imagem ocupa 90% da largura da tela em dispositivos móveis */
+        max-width: none; /* Remove o limite de largura máxima */
+    }
+
+    h1, h2, h3{
+        font-size: 1.5rem; /* Ajusta o tamanho dos títulos em telas pequenas */
+    }
+
+    p{
+        font-size: 0.95rem; /* Ajusta o tamanho da fonte em telas pequenas */
+    }
+}
+
+/* Estilos para telas muito pequenas (como celulares verticais) */
+@media (max-width: 550px) {
+    body{
+        padding: 10px; /* Reduz o padding em telas menores */
+    }
+
+    h1{
+        font-size: 1.8rem; /* Ajusta o tamanho do título principal */
+    }
+
+    h2{
+        font-size: 1.3rem; /* Ajusta o tamanho do subtítulo */
+    }
+
+    p{
+        font-size: 0.9rem; /* Ajusta o tamanho da fonte dos parágrafos */
+    }
+
+    ol{
+        padding: 0 10px; /* Ajusta o padding da lista */
+    }
+    img{
+        margin: auto;
+    }
+}
+
+/* Adicionando uma borda superior e inferior para a página */
+.container{
+    border-top: 3px solid #0d3b66;
+    border-bottom: 3px solid #0d3b66;
+    padding: 15px 20px 5px 10px;
+}

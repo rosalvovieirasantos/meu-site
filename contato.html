@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ícones de Redes Sociais</title>
+    
+    <!-- Link para os ícones do FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+
+        /* 🎨 Estiliza o fundo da página */
+        body {
+
+            @media (max-width: 600px) {
+            h1 {
+                font-size: 28px; /* Reduz o tamanho do título */
+            }
+            h3 {
+                font-size: 18px; /* Reduz o tamanho do subtítulo */
+            }
+        }
+
+            flex-direction: column;
+            display: flex;
+    
+            align-items: center; /* Centraliza verticalmente */
+            height: 100vh; /* Ocupa 100% da altura da tela */
+            background: linear-gradient(135deg, #1e3c72, #2a5298); /* Fundo com gradiente azul */
+            font-family: 'suse', sans-serif;
+        }
+
+        /* 🔗 Estiliza a área onde ficam os ícones */
+        .social-icons {
+            display: flex;
+            flex-direction: column; /* Os ícones ficam um abaixo do outro */
+            gap: 20px; /* Espaçamento entre os ícones */
+        }
+
+        /* 🔘 Estiliza cada ícone de rede social */
+        .icon {
+            position: relative; /* Permite posicionar o tooltip */
+            width: 60px;
+            height: 60px;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: transform 0.3s;
+            font-size: 24px;
+        }
+
+        /* 🎨 Efeito ao passar o mouse */
+        .icon:hover {
+            transform: scale(1.2);
+            background: #ddd;
+        }
+
+        /* 🏷️ Tooltip: Nome da rede social (Agora à direita) */
+        .icon span {
+            position: absolute;
+            left: 70px; /* Posiciona o nome à direita do ícone */
+            background: rgb(79, 149, 255);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-size: 14px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+            transform: translateX(-10px); /* Começa deslocado para a esquerda */
+        }
+
+        /* 👀 Exibe o nome da rede social ao passar o mouse */
+        .icon:hover span {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0); /* Move o nome para a posição correta */
+        }
+
+        h1 {
+            color: white;
+            font-size: 36px;
+            margin-bottom: 10px; /* Espaçamento entre h1 e h2 */
+        }
+
+        /* 🏷️ Estilo do subtítulo (h2) */
+        h3 {
+            margin-top: 5px 0 10px 0 ;
+            padding: 0;
+            color: white;
+            font-size: 24px;
+            margin-bottom: 30px; /* Espaçamento entre h2 e os ícones */
+        }
+    </style>
+</head>
+<body>
+        <h1>Quer entrar em contato comigo?</h1>
+        <h3>Então acesse as minhas platarformas digitais</h3>
+
+    <!-- 📌 Seção dos ícones -->
+    <div class="social-icons">
+        <!-- 🟦 Ícone do Facebook -->
+        <div class="icon">
+            <a href="https://www.facebook.com/?locale=pt_BR"><i class="fa-brands fa-facebook-f"></i></a>
+            <span>Facebook</span>
+        </div>
+
+        <!-- 🐦 Ícone do GitHub -->
+        <div class="icon">
+            <a href="https://github.com/rosalvosanttos"><i class="fa-brands fa-github"></i></a>
+            <span>GitHub</span>
+        </div>
+
+        <!-- 📸 Ícone do Instagram -->
+        <div class="icon">
+            <a href="https://www.instagram.com/rosalvosanttos"><i class="fa-brands fa-instagram"></i></a>
+            <span>Instagram</span>
+        </div>
+
+        <!-- 🔗 Ícone do LinkedIn -->
+        <div class="icon">
+            <a href="https://www.linkedin.com/in/rosalvo-santos-723630209/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <span>LinkedIn</span>
+        </div>
+    </div>
+
+</body>
+</html>
