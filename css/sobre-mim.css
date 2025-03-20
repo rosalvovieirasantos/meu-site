@@ -71,6 +71,10 @@ p{
     padding: 5px 0;
 }
 
+.botao-de-voltar{
+    text-align: center;
+}
+
 footer{
     width: 100%;
     background-color: #afc0ffbe;
