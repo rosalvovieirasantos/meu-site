@@ -12,9 +12,46 @@ body {
     background-color: rgba(255, 246, 198, 0.795);
     box-shadow: 5px 5px 15px #012e40ab;
     font-family: 'suse', sans-serif;
-    width: 900px;
+    width: 800px;
     border-radius: 15px;
     margin: auto;
+}
+
+#minha-foto{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    justify-content: center;
+}
+
+img{
+    max-width: 150px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+header{
+    padding: 10px 20px; 
+}
+
+main{
+    margin: 10px 20px;
+}
+h2{
+    font-size: 1.7em;
+    color: rgb(21, 21, 175);
+    padding-left: 2px;
+    margin: 20px 0 15px 0;
+    font-weight: 700;
+}
+
+main > article > p > a{
+    font-weight: bold;
+    text-decoration: none;
+    color: rgba(13, 75, 245, 0.966)
+}
+p > a:hover{
+    text-decoration: underline;
 }
 
 p{
