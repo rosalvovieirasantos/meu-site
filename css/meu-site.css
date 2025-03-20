@@ -43,11 +43,11 @@ li>a{
     font-weight: 600;
 }
 .texto h1 {
-    color: #0e22dd;
+    color: rgb(4, 4, 139);
 }
 
 .texto h3 {
-    color: #34394bce;
+    color: #373a47ce;
     margin-top: 10px;
 }
 
@@ -77,7 +77,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(3, 4, 59);
+    color: rgb(5, 6, 99);
     text-decoration: none;
     padding: 5px;
     font-size: 1.2rem;
@@ -91,7 +91,7 @@ nav ul li a:hover {
 
 /* Ícones sociais */
 .social-icons a {
-    color: rgb(3, 4, 59);
+    color: rgb(5, 6, 99);
     font-size: 1.5rem;
     padding: 5px;
     transition: 0.3s;

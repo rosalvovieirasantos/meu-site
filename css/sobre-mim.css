@@ -17,11 +17,11 @@ body {
     margin: auto;
 }
 
-#minha-foto{
+.minha-foto{
     display: flex;
     align-items: center;
     padding: 20px 0;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 img{
@@ -31,15 +31,23 @@ img{
 }
 
 header{
+    background: linear-gradient(to top, #7784fc, #8ba4f7, rgb(161, 192, 248), rgb(184, 235, 255), rgb(228, 253, 255), rgb(242, 247, 255));
     padding: 10px 20px; 
+    border-radius: 5px 10px 0 25px;
 }
 
 main{
     margin: 10px 20px;
 }
+
+h1{
+    font-family: 'suse', sans-serif;
+    color: rgb(4, 4, 139);
+}
+
 h2{
     font-size: 1.7em;
-    color: rgb(21, 21, 175);
+    color: rgb(9, 21, 201);
     padding-left: 2px;
     margin: 20px 0 15px 0;
     font-weight: 700;
@@ -48,7 +56,7 @@ h2{
 main > article > p > a{
     font-weight: bold;
     text-decoration: none;
-    color: rgba(13, 75, 245, 0.966)
+    color: rgba(6, 55, 218, 0.966)
 }
 p > a:hover{
     text-decoration: underline;
@@ -83,18 +91,34 @@ footer > p{
         width: 100%; /* Ocupa toda a largura da tela */
         border-radius: 0; /* Remove bordas arredondadas em telas pequenas */
         box-shadow: none; /* Remove sombras para um design mais limpo */
-        padding: 10px; /* Reduz o padding para economizar espaço */
     }
 
-}
-
-@media (max-width: 480px){
-
-    body {
-        width: 100%; /* Ocupa toda a largura da tela */
-        border-radius: 0; /* Remove bordas arredondadas em telas pequenas */
-        box-shadow: none; /* Remove sombras para um design mais limpo */
-        padding: 10px; /* Reduz o padding para economizar espaço */
+    footer{
+        border-radius: 0;
     }
+
+    .minha-foto{
+        flex-direction: column;
+    }
+
+    img{
+        max-width: 100px;
+        justify-content: center;
+    }
+
+    h1{
+        font-size: 1.5rem;
+        margin-top: 5px;
+        justify-content: center;
+    }
+
+    h2{
+        font-size: 1.3rem;
+    }
+
+    p{
+        font-size: 0.7em;
+    }
+
 }
 
