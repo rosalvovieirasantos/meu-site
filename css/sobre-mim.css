@@ -75,6 +75,20 @@ p{
     text-align: center;
 }
 
+.botao-de-voltar > a{
+    color: rgb(9, 12, 179);
+    font-size: 1.5rem;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.botao-de-voltar > a:hover{
+    transition: transform 0.5s;
+    background-color: rgb(9, 12, 179);
+    color: white;
+    border-radius: 10px;
+}
+
 footer{
     width: 100%;
     background-color: #afc0ffbe;

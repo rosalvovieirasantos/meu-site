@@ -48,10 +48,14 @@ p{
     
 }
 
+/* Adicionando uma borda superior e inferior para a página */
+.container{
+    padding: 5px 20px;
+    border-top: 3px solid #0d3b66;
+}
+
 /* Estilo para a lista ordenada (ol) */
 ol{
-   padding: 0 10px;
-;
     font-size: 1.1em;
 }
 
@@ -75,6 +79,40 @@ li{
     /* Mantém a proporção da imagem */
     border-radius: 10px; /* Bordas arredondadas na imagem */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra suave na imagem */
+}
+
+.botao-de-voltar{
+    text-align: center;
+}
+
+.botao-de-voltar > a{
+    color: rgb(9, 12, 179);
+    font-size: 1.5rem;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.botao-de-voltar > a:hover{
+    transition: transform 0.5s;
+    background-color: rgb(9, 12, 179);
+    color: white;
+    border-radius: 10px;
+}
+
+footer{
+    width: 100%;
+    background-color: #afc0ffbe;
+    border-radius: 0 0 15px 15px;
+}
+
+footer > p{
+    font-size: 0.8em;
+    padding: 5px;
+    margin-left: -30px;
+}
+
+.rodape > p{
+    text-align: center;
 }
 
 /* Media query para telas pequenas (celulares e dispositivos móveis) */
@@ -125,11 +163,4 @@ li{
     img{
         margin: auto;
     }
-}
-
-/* Adicionando uma borda superior e inferior para a página */
-.container{
-    border-top: 3px solid #0d3b66;
-    border-bottom: 3px solid #0d3b66;
-    padding: 15px 20px 5px 10px;
 }
