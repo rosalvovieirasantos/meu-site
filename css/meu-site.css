@@ -128,7 +128,8 @@ p{
 main > article > p > a{
     font-weight: bold;
     text-decoration: none;
-    color: rgba(13, 75, 245, 0.966)
+    color: rgba(13, 75, 245, 0.966);
+
 }
 p > a:hover{
     text-decoration: underline;
@@ -136,13 +137,31 @@ p > a:hover{
 
 .personagens{
     display: flex;
-    padding: 15px 0;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    padding: 10px 0;
 }
 
 .personagens > img{
-    justify-content: space-between;
     max-height: 100px;
     max-width: 150px;
+}
+
+aside{
+    width: 100%;
+    padding: 15px 0;
+}
+
+aside > p{
+    font-family: 'suse', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+aside > p > a{
+    text-decoration: none;
+    color: rgba(13, 75, 245, 0.966);
 }
 
 footer{
