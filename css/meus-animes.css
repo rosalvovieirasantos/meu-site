@@ -12,12 +12,10 @@ body{
     width: 800px; /* Largura padrão da página */
     margin: auto; /* Centraliza a página */
     font-family: 'suse', sans-serif; /* Fonte personalizada */
-    background-color: #f4f4f9; /* Cor de fundo suave */
+    background-color: #e7e7f3; /* Cor de fundo suave */
     border-radius: 20px; /* Bordas arredondadas */
-    border: 1px solid #7d7d7d; /* Borda fina e discreta */
-    padding: 20px; /* Padding interno */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    color: #181717; /* Cor do texto */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.37); /* Sombra suave */
+    color: #0e0d0d; /* Cor do texto */
 }
 
 /* Estilo para os títulos principais */
@@ -50,6 +48,7 @@ p{
 
 /* Adicionando uma borda superior e inferior para a página */
 .container{
+    margin: 10px 20px;
     padding: 5px 20px;
     border-top: 3px solid #0d3b66;
 }
@@ -99,6 +98,26 @@ li{
     border-radius: 10px;
 }
 
+.texto-final{
+    margin: 0 20px;
+    padding: 0 10px;
+}
+
+.texto-final > p{
+    font-size: 1em;
+    text-indent: 0;
+    text-align: justify;
+}
+
+.texto-final > p > a{
+    text-decoration: none;
+    color: rgb(6, 6, 184);
+}
+
+.texto-final > p > a:hover{
+    text-decoration: underline;
+}
+
 footer{
     width: 100%;
     background-color: #afc0ffbe;
@@ -108,7 +127,6 @@ footer{
 footer > p{
     font-size: 0.8em;
     padding: 5px;
-    margin-left: -30px;
 }
 
 .rodape > p{
