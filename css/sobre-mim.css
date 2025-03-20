@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(255, 246, 198, 0.795);
+    box-shadow: 5px 5px 15px #012e40ab;
+    font-family: 'suse', sans-serif;
+    width: 900px;
+    border-radius: 15px;
+    margin: auto;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    text-indent: 30px;
+    padding: 5px 0;
+}
+
+footer{
+    width: 100%;
+    background-color: #afc0ffbe;
+    border-radius: 0 0 15px 15px;
+}
+
+footer > p{
+    font-size: 0.8em;
+    padding: 5px;
+    margin-left: -30px;
+}
+
+.rodape > p{
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    body {
+        width: 100%; /* Ocupa toda a largura da tela */
+        border-radius: 0; /* Remove bordas arredondadas em telas pequenas */
+        box-shadow: none; /* Remove sombras para um design mais limpo */
+        padding: 10px; /* Reduz o padding para economizar espaço */
+    }
+
+}
+
+@media (max-width: 480px){
+
+    body {
+        width: 100%; /* Ocupa toda a largura da tela */
+        border-radius: 0; /* Remove bordas arredondadas em telas pequenas */
+        box-shadow: none; /* Remove sombras para um design mais limpo */
+        padding: 10px; /* Reduz o padding para economizar espaço */
+    }
+}
+
