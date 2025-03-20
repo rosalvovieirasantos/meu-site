@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: rgba(255, 246, 198, 0.795);
+    background-color: #f4f4f9; /* Cor de fundo suave */
     box-shadow: 5px 5px 15px #012e40ab;
     font-family: 'suse', sans-serif;
     width: 800px;
@@ -41,6 +41,7 @@ main{
 }
 
 h1{
+    font-size: 2.5em;
     font-family: 'suse', sans-serif;
     color: rgb(4, 4, 139);
 }

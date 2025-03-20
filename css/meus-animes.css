@@ -17,7 +17,7 @@ body{
     border: 1px solid #7d7d7d; /* Borda fina e discreta */
     padding: 20px; /* Padding interno */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    color: #333; /* Cor do texto */
+    color: #181717; /* Cor do texto */
 }
 
 /* Estilo para os títulos principais */
