@@ -183,7 +183,6 @@ footer > p{
         width: 100%; /* Ocupa toda a largura da tela */
         border-radius: 0; /* Remove bordas arredondadas em telas pequenas */
         box-shadow: none; /* Remove sombras para um design mais limpo */
-        padding: 10px 0px; /* Reduz o padding para economizar espaço */
     }
 
     .container {
@@ -238,7 +237,7 @@ footer > p{
         width: 100%; /* Ocupa toda a largura da tela */
         border-radius: 0; /* Remove bordas arredondadas em telas pequenas */
         box-shadow: none; /* Remove sombras para um design mais limpo */
-        padding: 10px; /* Reduz o padding para economizar espaço */
+        padding: 10px 0;
     }
 
     .container {
