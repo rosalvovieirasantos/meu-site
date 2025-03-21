@@ -155,6 +155,10 @@ footer > p{
     p{
         font-size: 0.95rem; /* Ajusta o tamanho da fonte em telas pequenas */
     }
+
+    footer{
+        border-radius: 0;
+    }
 }
 
 /* Estilos para telas muito pequenas (como celulares verticais) */
