@@ -18,54 +18,51 @@ body{
     color: #0e0d0d; /* Cor do texto */
 }
 
-.sub-titulo{
-    padding: 5px 20px;
-    margin: 10px 20px;
+.cabecalho{
+    padding: 10px 0;
+    margin: 0 10px;
 }
 
-/* Estilo para os títulos principais */
-h1 {
-    margin-top: 20px 0;
-    padding: 20px 0 0 0;
-    font-size: 2.1em;
+.cabecalho h1{
+    padding: 10px 0;
+    font-family: 'suse', sans-serif;
+    font-size: 2em;
     text-align: center;
-    color: #0d3b66; /* Cor do título */
+    color: #170991; /* Cor do título */
 }
+
+.cabecalho p{
+    text-align: justify;
+    text-indent: 0;
+    padding: 10px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    margin: 0 10px;
+    padding: 0 10px;
+    border-top: 2px solid rgb(8, 8, 121);
+}
+
 h2{
+    font-family: 'suse', sans-serif;
     margin-top: 20px;
-    color: #0d3b66; /* Cor do título */
+    color: #001fac; /* Cor do título */
 }
 
 /* Estilo para parágrafos */
-p{
+.paragrafos p{
     text-indent: 20px; /* Indenta o início do parágrafo */
     text-align: justify; /* Alinha o texto de forma justificada */
     line-height: 1.6; /* Aumenta o espaçamento entre as linhas para facilitar a leitura */
     font-size: 1.2rem; /* Tamanho da fonte */
-    font-weight: 400;
-    
-}
-
-/* Adicionando uma borda superior e inferior para a página */
-.container{
-    margin: 10px 20px;
-    padding: 5px 20px;
-    border-top: 3px solid #0d3b66;
-}
-
-/* Estilo para a lista ordenada (ol) */
-ol{
-    font-size: 1.1em;
-}
-
-/* Estilos específicos para os itens da lista */
-li{
-    margin-bottom: 20px; /* Espaço entre os itens */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .imagens{
     text-align: center; /* Centraliza a imagem */
     margin-top: 15px; /* Espaçamento superior */
+    margin-bottom: 10px;
 }
 
 .imagens > img{
@@ -127,6 +124,8 @@ footer{
 footer > p{
     font-size: 0.8em;
     padding: 5px;
+    text-align: center;
+    text-indent: 0;
 }
 
 .rodape > p{
@@ -135,59 +134,23 @@ footer > p{
 
 /* Media query para telas pequenas (celulares e dispositivos móveis) */
 @media (max-width: 700px) {
+
     body{
         width: 100%; /* A página ocupa toda a largura da tela */
         border-radius: 0; /* Remove bordas arredondadas */
-        padding: 15px; /* Ajusta o padding para otimizar o espaço */
         box-shadow: none; /* Remove a sombra para uma aparência mais limpa */
         overflow-x: hidden; /* Remove a barra de rolagem horizontal */
     }
 
     .imagens > img{
         width: 90%; /* A imagem ocupa 90% da largura da tela em dispositivos móveis */
-        max-width: none; /* Remove o limite de largura máxima */
     }
 
-    h1, h2, h3{
-        font-size: 1.5rem; /* Ajusta o tamanho dos títulos em telas pequenas */
-    }
-
-    p{
-        font-size: 0.95rem; /* Ajusta o tamanho da fonte em telas pequenas */
+    img{
+        margin: auto;
     }
 
     footer{
         border-radius: 0;
-    }
-}
-
-/* Estilos para telas muito pequenas (como celulares verticais) */
-@media (max-width: 550px) {
-    body{
-        padding: 10px 5px; /* Reduz o padding em telas menores */
-    }
-
-    .sub-titulo{
-        padding: 10px 15px 5px 15px;
-        margin: 0 10px;
-    }
-
-    h1{
-        font-size: 1.8rem; /* Ajusta o tamanho do título principal */
-    }
-
-    h2{
-        font-size: 1.3rem; /* Ajusta o tamanho do subtítulo */
-    }
-
-    p{
-        font-size: 0.9rem; /* Ajusta o tamanho da fonte dos parágrafos */
-    }
-
-    ol{
-        padding: 0 10px; /* Ajusta o padding da lista */
-    }
-    img{
-        margin: auto;
     }
 }

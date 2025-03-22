@@ -26,15 +26,6 @@ header {
     max-width: 200px;
 }
 
-.container {
-    display: flex;
-    padding-right: 25px;
-    padding-left: 25px;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-}
-
 h1,h3,li>a{
     font-family: 'suse';
 }
@@ -150,16 +141,19 @@ p > a:hover{
 
 aside{
     width: 100%;
-    padding: 15px 0;
+    
 }
 
 aside > p{
     font-family: 'suse', sans-serif;
     font-size: 15px;
+    text-indent: 0;
     text-align: center;
+    padding: 10px 5px;
 }
 
 aside > p > a{
+    font-weight: bold;
     text-decoration: none;
     color: rgba(13, 75, 245, 0.966);
 }
@@ -172,6 +166,8 @@ footer{
 footer > p{
     font-size: 0.8em;
     padding: 5px;
+    text-align: center;
+    text-indent: 0;
 }
 
 .rodape > p{
@@ -229,6 +225,7 @@ footer > p{
     footer{
         border-radius: 0;
     }
+
 }
 
 @media (max-width: 480px){
@@ -237,11 +234,6 @@ footer > p{
         width: 100%; /* Ocupa toda a largura da tela */
         border-radius: 0; /* Remove bordas arredondadas em telas pequenas */
         box-shadow: none; /* Remove sombras para um design mais limpo */
-        padding: 10px 0;
-    }
-
-    .container {
-        flex-direction: column;
     }
 
     .texto {
