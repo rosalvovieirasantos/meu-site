@@ -133,13 +133,18 @@ footer > p{
 }
 
 /* Media query para telas pequenas (celulares e dispositivos móveis) */
-@media (max-width: 700px) {
+@media (max-width: 600px) {
 
     body{
         width: 100%; /* A página ocupa toda a largura da tela */
         border-radius: 0; /* Remove bordas arredondadas */
         box-shadow: none; /* Remove a sombra para uma aparência mais limpa */
         overflow-x: hidden; /* Remove a barra de rolagem horizontal */
+    }
+
+    .paragrafos p{
+        line-height: 1.4;
+        font-size: 1.1rem;
     }
 
     .imagens > img{
