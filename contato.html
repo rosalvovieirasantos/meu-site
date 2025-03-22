@@ -17,9 +17,6 @@
         body {
 
             @media (max-width: 600px) {
-            h1 {
-                font-size: 28px; /* Reduz o tamanho do título */
-            }
             h3 {
                 font-size: 18px; /* Reduz o tamanho do subtítulo */
             }
@@ -56,6 +53,10 @@
             font-size: 24px;
         }
 
+        .icon > a > i{
+            color: rgb(6, 4, 110);
+        }
+
         /* 🎨 Efeito ao passar o mouse */
         .icon:hover {
             transform: scale(1.2);
@@ -86,37 +87,29 @@
             transform: translateX(0); /* Move o nome para a posição correta */
         }
 
-        h1 {
-            color: white;
-            font-size: 36px;
-            margin-bottom: 10px; /* Espaçamento entre h1 e h2 */
-        }
-
         /* 🏷️ Estilo do subtítulo (h2) */
-        h3 {
-            margin-top: 5px 0 10px 0 ;
-            padding: 0;
+        h2 {
+            padding: 20px 0 30px 0;
             color: white;
             font-size: 24px;
-            margin-bottom: 30px; /* Espaçamento entre h2 e os ícones */
+        
         }
 
        
     </style>
 </head>
 <body>
-        <h1>Quer entrar em contato comigo?</h1>
-        <h3>Então acesse as minhas platarformas digitais</h3>
+        <h2>Entre entre em contato comigo através das minhas redes socias!</h2>
 
-    <!-- 📌 Seção dos ícones -->
+    <!--  Seção dos ícones -->
     <div class="social-icons">
-        <!-- 🟦 Ícone do Facebook -->
+        <!-- Ícone do Email -->
         <div class="icon">
-            <a href="https://www.facebook.com/?locale=pt_BR" target="_blank" rel="external"><i class="fa-brands fa-facebook-f"></i></a>
-            <span>Facebook</span>
+            <a href="mailto:rosalvonoguera@gmail.com?subject=Para+Rosalvo+Santos&body=Sua+mensagem" target="_blank" rel="external"><i class="fa-solid fa-envelope"></i></a>
+            <span>E-mail</span>
         </div>
 
-        <!-- 🐦 Ícone do GitHub -->
+        <!--  Ícone do GitHub -->
         <div class="icon">
             <a href="https://github.com/rosalvovieirasantos" target="_blank" rel="external"><i class="fa-brands fa-github"></i></a>
             <span>GitHub</span>
