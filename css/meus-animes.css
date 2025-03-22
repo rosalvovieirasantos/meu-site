@@ -164,7 +164,12 @@ footer > p{
 /* Estilos para telas muito pequenas (como celulares verticais) */
 @media (max-width: 550px) {
     body{
-        padding: 10px; /* Reduz o padding em telas menores */
+        padding: 10px 5px; /* Reduz o padding em telas menores */
+    }
+
+    .sub-titulo{
+        padding: 10px 15px 5px 15px;
+        margin: 0 10px;
     }
 
     h1{
