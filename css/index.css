@@ -8,107 +8,126 @@
     box-sizing: border-box;
 }
 
+:root{
+    --cor0: #e3effc;
+    --cor1: #98c4da;
+    --cor2: #366CD9;
+    --cor3: #1C00D9;
+    --cor4: #0a14a1;
+    --cor5: #01016b;
+    --cor6: #080257;
+
+    --font-especial: 'suse', sans-serif;
+    --font-padrao: Arial, Helvetica, Sans-serif;
+
+}
+
 body {
-    background-color: #f4f4f9; /* Cor de fundo suave */
-    box-shadow: 5px 5px 15px #012e40ab;
+    background-color: var(--cor0);
+    box-shadow: 5px 5px 10px #012e4073;
     width: 800px;
     border-radius: 15px;
     margin: auto;
 }
 
-/* Estilizando o cabeçalho */
 header {
-    background: linear-gradient(to top, #5566ff, #6c8df8, rgb(153, 188, 252), rgb(184, 235, 255), rgb(228, 253, 255), rgb(242, 247, 255));
+    background: linear-gradient(to bottom, var(--cor0), var(--cor1), var(--cor2));
     text-align: center;
 }
 
-.topo img {
-    max-width: 200px;
+.logotipo img {
+    max-width: 150px;
+    padding: 5px 0;
 }
 
-h1,h3,li>a{
-    font-family: 'suse';
-}
-
-li>a{
+.text-header h1 {
+    color: var(--cor5);
+    font-family: var(--font-especial);
     font-weight: 600;
-}
-.texto h1 {
-    color: rgb(4, 4, 139);
+    text-shadow: 0px 3px 5px rgba(29, 27, 27, 0.192);
 }
 
-.texto h3 {
-    color: #373a47c2;
-    margin-top: 10px;
+.text-header p{
+    color: rgba(0, 0, 0, 0.548);
+    font-family: var(--font-especial);
+    text-align: center;
+    font-size: 1em;
+    font-weight: 500;
+    margin: auto;
+    text-indent: 0;
+    padding: 5px 40px 0 40px;
+    margin: 0 20px;
 }
 
 .minha-foto img {
-    max-width: 100px;
+    max-width: 80px;
     border-radius: 50%;
-    border: 1px solid black;
-    margin-left: 50px;
+    border: 1px solid var(--cor5);
     margin-bottom: 5px;
+    margin-top: 5px;
 }
 
-/* Estilizando o menu */
+
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px 15px;
+    align-items: center; 
+    background-color: var(--cor2);
+    box-shadow: 0 3px 5px rgba(26, 25, 25, 0.329);
 }
 
-nav ul {
-    list-style: none;
+.menu {
     display: flex;
+    gap: 20px; /* Espaço entre os links */
 }
 
-nav ul li {
-    margin: 2px 50px 0 0;
+.social-icons {
+    padding-right: 15px;
+    display: flex; /* Mantém os ícones na mesma linha */
+    gap: 15px; /* Espaço entre os ícones */
 }
 
-nav ul li a {
-    color: rgb(5, 6, 99);
+.links {
     text-decoration: none;
-    padding: 5px;
+    font-family: var(--font-especial);
+    font-weight: 500;
+    color: var(--cor6);
     font-size: 1.2rem;
     transition: 0.3s;
+    padding: 10px;
 }
 
-nav ul li a:hover {
-    color: rgb(246, 254, 255);
-    border-radius: 10px; /* Arredonda as bordas ao passar o mouse */
+.links:hover {
+    border-radius: 10px;
+    background-color: var(--cor4);
+    color: var(--cor0);
 }
 
-/* Ícones sociais */
 .social-icons a {
-    color: rgb(5, 6, 99);
+    color: var(--cor6);
     font-size: 1.5rem;
-    padding: 5px;
+    padding: 10px;
     transition: 0.3s;
 }
 
 .social-icons a:hover {
-    color: white; /* Texto branco */
+    color: var(--cor0); /* Texto branco */
     border-radius: 10px;
-}
-
-main > article > h2{
-    font-family: 'suse';
 }
 
 main{
     margin: 10px 20px;
 }
-h2{
+main h2{
+    font-family: var(--font-especial);
     font-size: 1.7em;
-    color: rgb(21, 21, 175);
+    color: var(--cor4);
     padding-left: 2px;
     margin: 20px 0 15px 0;
     font-weight: 700;
 }
 
-p{
+main p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     text-align: justify;
@@ -116,13 +135,13 @@ p{
     padding: 5px 0;
 }
 
-main > article > p > a{
+main a{
+    color: var(--cor3);
     font-weight: bold;
     text-decoration: none;
-    color: rgba(13, 75, 245, 0.966);
 
 }
-p > a:hover{
+main a:hover{
     text-decoration: underline;
 }
 
@@ -145,25 +164,26 @@ aside{
 }
 
 aside > p{
-    font-family: 'suse', sans-serif;
+    font-family: var(--font-especial);
     font-size: 15px;
     text-indent: 0;
     text-align: center;
     padding: 10px 5px;
 }
 
-aside > p > a{
+aside a{
     font-weight: bold;
     text-decoration: none;
-    color: rgba(13, 75, 245, 0.966);
+    color: var(--cor3);
 }
 
 footer{
     width: 100%;
-    background-color: #afc0ffbe;
+    background-color: var(--cor1);
     border-radius: 0 0 15px 15px;
 }
 footer > p{
+    font-family: var(--font-padrao);
     font-size: 0.8em;
     padding: 5px;
     text-align: center;
@@ -174,23 +194,30 @@ footer > p{
     text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 816px) {
     body {
         width: 100%; /* Ocupa toda a largura da tela */
         border-radius: 0; /* Remove bordas arredondadas em telas pequenas */
         box-shadow: none; /* Remove sombras para um design mais limpo */
     }
 
-    .container {
-        flex-direction: column;
-    }
-
-    .texto {
+    nav {
+        flex-direction: column; /* Empilha os itens */
+        align-items: center; /* Centraliza tudo */
         text-align: center;
     }
 
+    .menu {
+        flex-direction: row; /* Links em coluna */
+        gap: 10px;
+    }
+
+    .social-icons {
+        margin-top: 10px; /* Espaço entre links e ícones */
+    }
+
     .minha-foto img {
-        margin: 20px 0;
+        margin: 10px 0;
     }
 
     .personagens{
@@ -200,68 +227,33 @@ footer > p{
         text-align: center;
     }
 
-    nav{
-        flex-direction: row;
-    }
-
-    nav ul.social-icons {
-        flex-direction: row;
-        width: 100%;
-    }
-
-    nav ul li {
-        width: 100%;
-        text-align: center;
-        margin: 2px 0;
-    }
-
-    nav ul li a{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        
-    }
-
     footer{
         border-radius: 0;
     }
 
 }
 
-@media (max-width: 480px){
 
-    body {
-        width: 100%; /* Ocupa toda a largura da tela */
-        border-radius: 0; /* Remove bordas arredondadas em telas pequenas */
-        box-shadow: none; /* Remove sombras para um design mais limpo */
-    }
+@media (max-width: 500px) {
 
-    .texto {
+    .minha-foto img{
+        max-width: 60px;
         text-align: center;
     }
 
-    .minha-foto img {
-        margin: 20px 0;
+    .text-header h1 {
+        font-size: 1.6em;
     }
 
-    nav{
-        flex-direction: row;
+    .text-header p{
+        font-size: 0.8em;
     }
 
-    nav ul.social-icons {
-        flex-direction: row;
-        width: 100%;
-    }
-    nav ul li {
-        width: 100%;
-        text-align: center;
-        margin: 2px 0;
+    main h2{
+        font-size: 1.5em;
     }
 
-    nav ul li a{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.8em;
+    .links{
+        font-size: 1em;
     }
 }

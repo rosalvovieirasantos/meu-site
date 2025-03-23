@@ -6,16 +6,30 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --cor0: #e3effc;
+    --cor1: #98c4da;
+    --cor2: #366CD9;
+    --cor3: #1C00D9;
+    --cor4: #0a14a1;
+    --cor5: #01016b;
+
+    --font-especial: 'suse', sans-serif;
+    --font-padrao: Arial, Helvetica, Sans-serif;
+
+}
+
         
-/* Estilos gerais para o corpo da página */
 body{
-    width: 800px; /* Largura padrão da página */
-    margin: auto; /* Centraliza a página */
-    font-family: 'suse', sans-serif; /* Fonte personalizada */
-    background-color: #e7e7f3; /* Cor de fundo suave */
-    border-radius: 20px; /* Bordas arredondadas */
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.37); /* Sombra suave */
-    color: #0e0d0d; /* Cor do texto */
+    width: 800px; 
+    margin: auto; 
+    margin-top: 10px;
+    font-family: var(--font-especial); 
+    background-color: var(--cor0);
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.37);
+    color: #000000; 
 }
 
 .cabecalho{
@@ -25,43 +39,42 @@ body{
 
 .cabecalho h1{
     padding: 10px 0;
-    font-family: 'suse', sans-serif;
+    font-family: var(--font-especial);
     font-size: 2em;
     text-align: center;
-    color: #170991; /* Cor do título */
+    color: var(--cor5);
 }
 
 .cabecalho p{
     text-align: justify;
     text-indent: 0;
     padding: 10px 15px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-padrao);
 }
 
 main{
     margin: 0 10px;
     padding: 0 10px;
-    border-top: 2px solid rgb(8, 8, 121);
+    border-top: 2px solid var(--cor5);
 }
 
-h2{
-    font-family: 'suse', sans-serif;
+main h2{
+    font-family: var(--font-especial);
     margin-top: 20px;
-    color: #001fac; /* Cor do título */
+    color: var(--cor4);
 }
 
-/* Estilo para parágrafos */
 .paragrafos p{
-    text-indent: 20px; /* Indenta o início do parágrafo */
-    text-align: justify; /* Alinha o texto de forma justificada */
-    line-height: 1.6; /* Aumenta o espaçamento entre as linhas para facilitar a leitura */
-    font-size: 1.2rem; /* Tamanho da fonte */
-    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 20px; 
+    text-align: justify; 
+    line-height: 1.6;
+    font-size: 18px;
+    font-family: var(--font-padrao);
 }
 
 .imagens{
-    text-align: center; /* Centraliza a imagem */
-    margin-top: 15px; /* Espaçamento superior */
+    text-align: center; 
+    margin-top: 15px; 
     margin-bottom: 10px;
 }
 
@@ -70,9 +83,6 @@ h2{
     height: auto;
     width: 100%;
     max-width: 500px;
-    /* Faz a imagem ocupar toda a largura disponível */
-    /* Limita a largura máxima da imagem */
-    /* Mantém a proporção da imagem */
     border-radius: 10px; /* Bordas arredondadas na imagem */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra suave na imagem */
 }
@@ -82,7 +92,7 @@ h2{
 }
 
 .botao-de-voltar > a{
-    color: rgb(9, 12, 179);
+    color: var(--cor2);
     font-size: 1.5rem;
     padding: 5px;
     transition: 0.3s;
@@ -90,7 +100,7 @@ h2{
 
 .botao-de-voltar > a:hover{
     transition: transform 0.5s;
-    background-color: rgb(9, 12, 179);
+    background-color: var(--cor3);
     color: white;
     border-radius: 10px;
 }
@@ -108,7 +118,7 @@ h2{
 
 .texto-final > p > a{
     text-decoration: none;
-    color: rgb(6, 6, 184);
+    color: var(--cor3);
 }
 
 .texto-final > p > a:hover{
@@ -117,7 +127,7 @@ h2{
 
 footer{
     width: 100%;
-    background-color: #afc0ffbe;
+    background-color: var(--cor1);
     border-radius: 0 0 15px 15px;
 }
 
@@ -143,7 +153,7 @@ footer > p{
     }
 
     .paragrafos p{
-        line-height: 1.4;
+        line-height: 1.5;
         font-size: 1.1rem;
     }
 
