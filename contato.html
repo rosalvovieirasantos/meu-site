@@ -12,38 +12,40 @@
 
         @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
 
+        :root{
+            --cor0: #e3effc;
+            --cor1: #98c4da;
+            --cor2: #366CD9;
+            --cor3: #1C00D9;
+            --cor4: #0a14a1;
+            --cor5: #01016b;
+            --cor6: #080257;
 
-        /* 🎨 Estiliza o fundo da página */
-        body {
+            --font-especial: 'suse', sans-serif;
+            --font-padrao: Arial, Helvetica, Sans-serif;
 
-            @media (max-width: 600px) {
-            h2 {
-                text-align: center;
-                font-size: 18px; /* Reduz o tamanho do subtítulo */
-            }
         }
 
+        body {
             flex-direction: column;
             display: flex;
-            align-items: center; /* Centraliza verticalmente */
-            height: 100vh; /* Ocupa 100% da altura da tela */
-            background: linear-gradient(135deg, #1d3c75, #2a5298); /* Fundo com gradiente azul */
-            font-family: 'suse', sans-serif;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, var(--cor4), var(--cor5), var(--cor6));
+            font-family:var(--font-especial);
         }
 
-        /* 🔗 Estiliza a área onde ficam os ícones */
         .social-icons {
             display: flex;
-            flex-direction: column; /* Os ícones ficam um abaixo do outro */
+            flex-direction: column;
             gap: 20px; /* Espaçamento entre os ícones */
         }
 
-        /* 🔘 Estiliza cada ícone de rede social */
         .icon {
             position: relative; /* Permite posicionar o tooltip */
             width: 60px;
             height: 60px;
-            background: white;
+            background-color: white;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -54,25 +56,25 @@
         }
 
         .icon > a > i{
-            color: rgb(6, 4, 110);
+            color: var(--cor3);
         }
 
-        /* 🎨 Efeito ao passar o mouse */
         .icon:hover {
             transform: scale(1.2);
-            background: #ddd;
+            background: var(--cor0);
         }
 
-        /* 🏷️ Tooltip: Nome da rede social (Agora à direita) */
+        /* Tooltip: Nome da rede social (Agora à direita) */
         .icon span {
             position: absolute;
             left: 70px; /* Posiciona o nome à direita do ícone */
-            background: rgb(79, 149, 255);
+            background: var(--cor2);
             color: white;
             padding: 8px 12px;
             border-radius: 5px;
             font-size: 14px;
-            font-family: 'suse', sans-serif;
+            font-family: var(--font-especial);
+            font-weight: 700;
             white-space: nowrap;
             opacity: 0;
             visibility: hidden;
@@ -80,19 +82,25 @@
             transform: translateX(-10px); /* Começa deslocado para a esquerda */
         }
 
-        /* 👀 Exibe o nome da rede social ao passar o mouse */
         .icon:hover span {
             opacity: 1;
             visibility: visible;
             transform: translateX(0); /* Move o nome para a posição correta */
         }
 
-        /* 🏷️ Estilo do subtítulo (h2) */
         h2 {
+            font-family: var(--font-especial);
             padding: 20px 0 30px 0;
             color: white;
             font-size: 24px;
             text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            h2 {
+                text-align: center;
+                font-size: 18px; /* Reduz o tamanho do subtítulo */
+            }
         }
 
        
@@ -101,32 +109,34 @@
 <body>
         <h2>Entre entre em contato comigo através das minhas redes socias!</h2>
 
-    <!--  Seção dos ícones -->
     <div class="social-icons">
+
         <!-- Ícone do Email -->
         <div class="icon">
             <a href="mailto:rosalvonoguera@gmail.com?subject=Para+Rosalvo+Santos&body=Sua+mensagem" target="_blank" rel="external"><i class="fa-solid fa-envelope"></i></a>
             <span>E-mail</span>
         </div>
 
-        <!--  Ícone do GitHub -->
+        <!-- Ícone do GitHub -->
         <div class="icon">
             <a href="https://github.com/rosalvovieirasantos" target="_blank" rel="external"><i class="fa-brands fa-github"></i></a>
             <span>GitHub</span>
         </div>
 
-        <!-- 📸 Ícone do Instagram -->
+        <!-- Ícone do Instagram -->
         <div class="icon">
             <a href="https://www.instagram.com/rosalvosanttos" target="_blank" rel="external"><i class="fa-brands fa-instagram"></i></a>
             <span>Instagram</span>
         </div>
 
-        <!-- 🔗 Ícone do LinkedIn -->
+        <!-- Ícone do LinkedIn -->
         <div class="icon">
             <a href="https://www.linkedin.com/in/rosalvo-santos-723630209/" target="_blank" rel="external"><i class="fa-brands fa-linkedin-in"></i></a>
             <span>LinkedIn</span>
         </div>
+        
         <br>
+
         <div class="icon">
             <a href="index.html"><i class="fa-solid fa-house"></i></a>
             <span>Voltar ao início</span>
