@@ -22,6 +22,10 @@
 
 }
 
+html{
+    padding: 15px 0;
+}
+
 body {
     background-color: var(--cor0); /* Cor de fundo suave */
     box-shadow: 5px 5px 15px #012e40ab;
@@ -33,7 +37,10 @@ body {
 header{
     background: linear-gradient(to bottom, var(--cor0), var(--cor1), var(--cor2));
     padding: 10px 20px; 
-    border-radius: 5px 10px 0 25px;
+    border-radius: 15px 15px 0 0;
+    border-bottom: 1px solid var(--cor5);
+    box-shadow: 0 2px 5px #012e40ab;
+
 }
 
 header h1{
@@ -111,7 +118,7 @@ footer{
 }
 
 footer > p{
-    font-family: var(--font-padrao);
+    font-family: var(--font-especial);
     font-size: 0.8em;
     padding: 5px;
     text-align: center;
@@ -123,6 +130,11 @@ footer > p{
 }
 
 @media (max-width: 814px) {
+
+    html{
+        padding: 0;
+    }
+
     body {
         width: 100%; /* Ocupa toda a largura da tela */
         border-radius: 0; /* Remove bordas arredondadas em telas pequenas */
@@ -149,7 +161,7 @@ footer > p{
         font-size: 1.5em;
     }
 
-    p{
+    footer p{
         font-size: 0.7em;
     }
 

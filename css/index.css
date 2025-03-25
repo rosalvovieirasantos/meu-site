@@ -22,6 +22,10 @@
 
 }
 
+html{
+    padding: 15px 0;
+}
+
 body {
     background-color: var(--cor0);
     box-shadow: 5px 5px 10px #012e4073;
@@ -31,8 +35,11 @@ body {
 }
 
 header {
+    border-radius: 15px 15px 0 0;
     background: linear-gradient(to bottom, var(--cor0), var(--cor1), var(--cor2));
     text-align: center;
+    border-bottom: 1px solid var(--cor5);
+    box-shadow: 0 2px 5px #012e40ab;
 }
 
 .logotipo img {
@@ -183,7 +190,7 @@ footer{
     border-radius: 0 0 15px 15px;
 }
 footer > p{
-    font-family: var(--font-padrao);
+    font-family: var(--font-especial);
     font-size: 0.8em;
     padding: 5px;
     text-align: center;
@@ -236,6 +243,10 @@ footer > p{
 
 @media (max-width: 500px) {
 
+    html{
+        padding: 0;
+    }
+
     .minha-foto img{
         max-width: 60px;
         text-align: center;
@@ -254,6 +265,14 @@ footer > p{
     }
 
     .links{
-        font-size: 20px;
+        font-size: 18px;
+    }
+
+    footer{
+        border-radius: 0;
+    }
+
+    footer p{
+        font-size: 0.7em;
     }
 }

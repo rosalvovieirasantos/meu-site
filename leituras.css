@@ -1,8 +1,9 @@
-/* Fonte personalizada do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
 
-*{
-    margin: auto;
+
+/* Resetando estilos básicos */
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -14,6 +15,7 @@
     --cor3: #1C00D9;
     --cor4: #0a14a1;
     --cor5: #01016b;
+    --cor6: #080257;
 
     --font-especial: 'suse', sans-serif;
     --font-padrao: Arial, Helvetica, Sans-serif;
@@ -23,21 +25,21 @@
 html{
     padding: 15px 0;
 }
-        
-body{
+
+body {
+    
+    box-shadow: 5px 5px 10px #012e405e;
+    width: 800px;
     border-radius: 15px;
-    width: 800px; 
-    margin: auto; 
-    font-family: var(--font-especial); 
-    background-color: var(--cor0);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.37);
+    margin: auto;
 }
 
-header{
+header {
     border-radius: 15px 15px 0 0;
-    background: linear-gradient(to bottom, var(--cor0), var(--cor1), var(--cor2));
-    border-bottom: 2px solid var(--cor5);
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.37);
+    background: linear-gradient(to top, var(--cor0), var(--cor1), var(--cor2));
+    text-align: center;
+    
+    box-shadow: 0 2px 3px #012e4054;
 }
 
 .cabecalho{
@@ -48,9 +50,10 @@ header{
 .cabecalho h1{
     padding: 10px 0;
     font-family: var(--font-especial);
-    font-size: 2em;
+    font-size: 2.1em;
     text-align: center;
     color: var(--cor5);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.39);
 }
 
 .cabecalho h2{
@@ -61,10 +64,11 @@ header{
 }
 
 .cabecalho p{
-    text-align: justify;
-    text-indent: 0;
+    text-align: center;
     padding: 10px 15px;
     font-family: var(--font-padrao);
+    font-size: 14px;
+    color: #0000009a;
 }
 
 main{
@@ -73,32 +77,22 @@ main{
 }
 
 main h2{
+    margin-top: 25px;
+    background: linear-gradient(to right, var(--cor0), transparent);
     font-family: var(--font-especial);
-    margin-top: 20px;
+    text-indent: 6px;
     color: var(--cor4);
+    border-radius: 0 0 0 8px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.151);
 }
 
-.paragrafos p{
+main p{
+    padding: 10px 0;
     text-indent: 20px; 
     text-align: justify; 
-    line-height: 1.6;
+    line-height: 1.5;
     font-size: 18px;
     font-family: var(--font-padrao);
-}
-
-.imagens{
-    text-align: center; 
-    margin-top: 15px; 
-    margin-bottom: 10px;
-}
-
-.imagens > img{
-    margin: 15px 0;
-    height: auto;
-    width: 100%;
-    max-width: 500px;
-    border-radius: 10px; /* Bordas arredondadas na imagem */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra suave na imagem */
 }
 
 .botao-de-voltar{
@@ -156,7 +150,6 @@ footer > p{
     text-align: center;
 }
 
-/* Media query para telas pequenas (celulares e dispositivos móveis) */
 @media (max-width: 600px) {
 
     html{

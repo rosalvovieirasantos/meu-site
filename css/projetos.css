@@ -22,15 +22,17 @@
 
         }
 
+        html{
+            padding: 15px 0;
+        }
+
         body{
-            height: 100vh;
             width: 800px;
             margin: auto;
             font-family:var(--font-especial);
-            border-radius: 10px;
+            border-radius: 15px;
             border: 1px solid rgba(0, 0, 0, 0.342);
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.37);
-            margin-top: 10px;
         }
 
         header{
@@ -38,13 +40,20 @@
            text-align: center;
            padding: 20px 0;
            background: linear-gradient(to bottom, var(--cor0), var(--cor1), var(--cor2));
-           border-radius: 10px 10px 15px 15px;
+           border-radius: 15px 15px 0 0;
+           border-bottom: 1px solid var(--cor5);
+           box-shadow: 0 2px 5px #012e40ab;
         }
 
         header h1{
             font-family: var(--font-especial);
             color: var(--cor5);
             text-shadow: 1px 3px 5px rgba(34, 33, 33, 0.274);
+        }
+
+        header p{
+            padding: 10px;
+            color: rgba(0, 0, 0, 0.658);
         }
 
         main{
@@ -87,7 +96,48 @@
             padding: 20px;
         }
 
+        .botao-de-voltar{
+            text-align: center;
+        }
+        
+        .botao-de-voltar > a{
+            color: var(--cor2);
+            font-size: 1.5rem;
+            padding: 5px;
+            transition: 0.3s;
+        }
+        
+        .botao-de-voltar > a:hover{
+            transition: transform 0.5s;
+            background-color: var(--cor3);
+            color: white;
+            border-radius: 10px;
+        }
+
+        footer{
+            border-radius: 0 0 15px 15px;
+            width: 100%;
+            background-color: var(--cor1);
+        }
+        
+        footer > p{
+            font-family: var(--font-especial);
+            font-size: 0.8em;
+            padding: 5px;
+            text-align: center;
+            text-indent: 0;
+        }
+        
+        .rodape > p{
+            text-align: center;
+        }
+
         @media (max-width: 700px) {
+
+            html{
+                padding: 0;
+            }
+
             body {
                 width: 100%; /* Ocupa toda a largura da tela */
                 border-radius: 0; /* Remove bordas arredondadas em telas pequenas */
@@ -96,6 +146,10 @@
 
             header h1{
                 font-size: 1.6em;
+            }
+
+            header p{
+                font-size: 14px;
             }
 
             main{
@@ -122,5 +176,13 @@
             .imagens img{
                 max-width: 100px;
                 max-height: 100px;
+            }
+
+            footer{
+                border-radius: 0;
+            }
+
+            footer p{
+                font-size: 0.7em;
             }
         }
