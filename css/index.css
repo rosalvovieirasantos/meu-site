@@ -247,6 +247,14 @@ footer > p{
         padding: 0;
     }
 
+    body{
+        border-radius: 0;
+    }
+    
+    body{
+        border-radius: 0;
+    }
+
     .minha-foto img{
         max-width: 60px;
         text-align: center;

@@ -140,6 +140,10 @@ footer > p{
         border-radius: 0; /* Remove bordas arredondadas em telas pequenas */
         box-shadow: none; /* Remove sombras para um design mais limpo */
     }
+     
+    header{
+        border-radius: 0;
+    }
 
     footer{
         border-radius: 0;

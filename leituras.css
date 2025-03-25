@@ -163,6 +163,10 @@ footer > p{
         overflow-x: hidden; /* Remove a barra de rolagem horizontal */
     }
 
+    header{
+        border-radius: 0;
+    }
+
     .paragrafos p{
         line-height: 1.5;
         font-size: 1.1rem;

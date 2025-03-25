@@ -144,6 +144,10 @@
                 box-shadow: none; /* Remove sombras para um design mais limpo */
             }
 
+            header{
+                border-radius: 0;
+            }
+
             header h1{
                 font-size: 1.6em;
             }
