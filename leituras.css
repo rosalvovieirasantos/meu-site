@@ -27,7 +27,6 @@ html{
 }
 
 body {
-    
     box-shadow: 5px 5px 10px #012e405e;
     width: 800px;
     border-radius: 15px;
@@ -38,7 +37,6 @@ header {
     border-radius: 15px 15px 0 0;
     background: linear-gradient(to top, var(--cor0), var(--cor1), var(--cor2));
     text-align: center;
-    
     box-shadow: 0 2px 3px #012e4054;
 }
 
@@ -80,7 +78,7 @@ main h2{
     margin-top: 25px;
     background: linear-gradient(to right, var(--cor0), transparent);
     font-family: var(--font-especial);
-    text-indent: 6px;
+    text-indent: 5px;
     color: var(--cor4);
     border-radius: 0 0 0 8px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.151);
@@ -100,7 +98,7 @@ main p{
 }
 
 .botao-de-voltar > a{
-    color: var(--cor2);
+    color: var(--cor3);
     font-size: 1.5rem;
     padding: 5px;
     transition: 0.3s;
@@ -167,17 +165,16 @@ footer > p{
         border-radius: 0;
     }
 
-    .paragrafos p{
-        line-height: 1.5;
-        font-size: 1.1rem;
+    header h1{
+        font-size: 1.9em;
     }
 
-    .imagens > img{
-        width: 90%; /* A imagem ocupa 90% da largura da tela em dispositivos móveis */
+    main h2{
+        font-size: 22px;
     }
 
-    img{
-        margin: auto;
+    main p{
+        font-size: 16px;
     }
 
     footer{

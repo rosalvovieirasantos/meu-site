@@ -101,7 +101,7 @@
         }
         
         .botao-de-voltar > a{
-            color: var(--cor2);
+            color: var(--cor3);
             font-size: 1.5rem;
             padding: 5px;
             transition: 0.3s;

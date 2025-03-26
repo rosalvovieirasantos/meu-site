@@ -38,7 +38,6 @@ header{
     background: linear-gradient(to bottom, var(--cor0), var(--cor1), var(--cor2));
     padding: 10px 20px; 
     border-radius: 15px 15px 0 0;
-    border-bottom: 1px solid var(--cor5);
     box-shadow: 0 2px 5px #012e40ab;
 
 }
@@ -98,7 +97,7 @@ main a:hover{
 }
 
 .botao-de-voltar > a{
-    color: var(--cor4);
+    color: var(--cor3);
     font-size: 1.5rem;
     padding: 5px;
     transition: 0.3s;
