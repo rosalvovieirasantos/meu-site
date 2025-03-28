@@ -87,6 +87,10 @@ main a:hover {
   text-decoration: underline;
 }
 
+main a::after{ /* Isso quer dizer que depois do link que tiver com a classe externo vai ter um espaço (\00A0), não pode esqucer de colocar a contra-barra a frente, em seguida o ícone de link*/
+  content: '\00A0\1F517';
+}
+
 main p {
   font-family: var(--font-padrao);
   margin-top: 5px;

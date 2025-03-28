@@ -157,7 +157,7 @@ footer > p{
 }
 
 /* Media query para telas pequenas (celulares e dispositivos móveis) */
-@media (max-width: 600px) {
+@media (max-width: 750px) {
 
     html{
         padding: 0;

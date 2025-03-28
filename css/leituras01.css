@@ -148,7 +148,7 @@ footer > p{
     text-align: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 814px) {
 
     html{
         padding: 0;
