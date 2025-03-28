@@ -1,192 +1,188 @@
 @charset "UTF-8";
 
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+@import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
 
-        @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-        :root{
-            --cor0: #e3effc;
-            --cor1: #98c4da;
-            --cor2: #366CD9;
-            --cor3: #1C00D9;
-            --cor4: #0a14a1;
-            --cor5: #01016b;
-            --cor6: #080257;
+:root {
+  --cor0: #e3effc;
+  --cor1: #98c4da;
+  --cor2: #366cd9;
+  --cor3: #1c00d9;
+  --cor4: #0a14a1;
+  --cor5: #01016b;
+  --cor6: #080257;
 
-            --font-especial: 'suse', sans-serif;
-            --font-padrao: Arial, Helvetica, Sans-serif;
+  --font-especial: "suse", sans-serif;
+  --font-padrao: Arial, Helvetica, Sans-serif;
+}
 
-        }
+html {
+  padding: 15px 0;
+}
 
-        html{
-            padding: 15px 0;
-        }
+body {
+  width: 800px;
+  margin: auto;
+  font-family: var(--font-especial);
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.342);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.37);
+}
 
-        body{
-            width: 800px;
-            margin: auto;
-            font-family:var(--font-especial);
-            border-radius: 15px;
-            border: 1px solid rgba(0, 0, 0, 0.342);
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.37);
-        }
+header {
+  text-align: center;
+  padding: 20px 0;
+  background: linear-gradient(to bottom, var(--cor0), var(--cor1), var(--cor2));
+  border-radius: 15px 15px 0 0;
+  border-bottom: 1px solid var(--cor5);
+  box-shadow: 0 2px 5px #012e40ab;
+}
 
-        header{
-           
-           text-align: center;
-           padding: 20px 0;
-           background: linear-gradient(to bottom, var(--cor0), var(--cor1), var(--cor2));
-           border-radius: 15px 15px 0 0;
-           border-bottom: 1px solid var(--cor5);
-           box-shadow: 0 2px 5px #012e40ab;
-        }
+header h1 {
+  font-family: var(--font-especial);
+  color: var(--cor5);
+  text-shadow: 1px 3px 5px rgba(34, 33, 33, 0.274);
+}
 
-        header h1{
-            font-family: var(--font-especial);
-            color: var(--cor5);
-            text-shadow: 1px 3px 5px rgba(34, 33, 33, 0.274);
-        }
+header p {
+  padding: 10px;
+  color: rgba(0, 0, 0, 0.658);
+}
 
-        header p{
-            padding: 10px;
-            color: rgba(0, 0, 0, 0.658);
-        }
+main {
+  margin: 20px;
+  padding: 20px;
+}
 
-        main{
-            margin: 20px;
-            padding: 20px;
-        }
+.imagens {
+  display: flex;
+  background: linear-gradient(to right, var(--cor0), transparent);
+  border-radius: 15px 0 0 15px;
+  max-height: 120px;
+}
 
-        .imagens{
-            display: flex;
-            background: linear-gradient(to right, var(--cor0), transparent);
-            border-radius: 15px 0 0 15px;
-            max-height: 120px;
-        }
+.imagens img {
+  max-width: 120px;
+  max-height: 120px;
+  border-radius: 15px;
+  margin-right: 10px;
+}
 
-        .imagens img{
-            max-width: 120px;
-            max-height: 120px;
-            border-radius: 15px;
-            margin-right: 10px;
+main h2 {
+  margin-top: 10px;
+}
 
-        }
+main h2 a {
+  color: var(--cor3);
+  text-decoration: none;
+  padding-left: 20px;
+}
 
-        main h2{
-            margin-top: 10px;
-        }
+main a:hover {
+  text-decoration: underline;
+}
 
-        main h2 a{
-            color: var(--cor3);
-            text-decoration: none;
-            padding-left: 20px;
-        }
+main p {
+  font-family: var(--font-padrao);
+  margin-top: 5px;
+  padding: 20px;
+}
 
-        main a:hover{
-            text-decoration: underline;
-        }
+.botao-de-voltar {
+  text-align: center;
+}
 
-        main p{
-            font-family: var(--font-padrao);
-            margin-top: 5px;
-            padding: 20px;
-        }
+.botao-de-voltar > a {
+  color: var(--cor3);
+  font-size: 1.5rem;
+  padding: 5px;
+  transition: 0.3s;
+}
 
-        .botao-de-voltar{
-            text-align: center;
-        }
-        
-        .botao-de-voltar > a{
-            color: var(--cor3);
-            font-size: 1.5rem;
-            padding: 5px;
-            transition: 0.3s;
-        }
-        
-        .botao-de-voltar > a:hover{
-            transition: transform 0.5s;
-            background-color: var(--cor3);
-            color: white;
-            border-radius: 10px;
-        }
+.botao-de-voltar > a:hover {
+  transition: transform 0.5s;
+  background-color: var(--cor3);
+  color: white;
+  border-radius: 10px;
+}
 
-        footer{
-            border-radius: 0 0 15px 15px;
-            width: 100%;
-            background-color: var(--cor1);
-        }
-        
-        footer > p{
-            font-family: var(--font-especial);
-            font-size: 0.8em;
-            padding: 5px;
-            text-align: center;
-            text-indent: 0;
-        }
-        
-        .rodape > p{
-            text-align: center;
-        }
+footer {
+  border-radius: 0 0 15px 15px;
+  width: 100%;
+  background-color: var(--cor1);
+}
 
-        @media (max-width: 700px) {
+footer > p {
+  font-family: var(--font-especial);
+  font-size: 0.8em;
+  padding: 5px;
+  text-align: center;
+  text-indent: 0;
+}
 
-            html{
-                padding: 0;
-            }
+.rodape > p {
+  text-align: center;
+}
 
-            body {
-                width: 100%; /* Ocupa toda a largura da tela */
-                border-radius: 0; /* Remove bordas arredondadas em telas pequenas */
-                box-shadow: none; /* Remove sombras para um design mais limpo */
-            }
+@media (max-width: 700px) {
+  html {
+    padding: 0;
+  }
 
-            header{
-                border-radius: 0;
-            }
+  body {
+    width: 100%; /* Ocupa toda a largura da tela */
+    border-radius: 0; /* Remove bordas arredondadas em telas pequenas */
+    box-shadow: none; /* Remove sombras para um design mais limpo */
+  }
 
-            header h1{
-                font-size: 1.6em;
-            }
+  header {
+    border-radius: 0;
+  }
 
-            header p{
-                font-size: 14px;
-            }
+  header h1 {
+    font-size: 1.6em;
+  }
 
-            main{
-                margin: 0;
-                padding: 10px;
-            }
+  header p {
+    font-size: 14px;
+  }
 
-            main h2{
-                margin-top: 5px;
-                font-size: 1em;
-            }
+  main {
+    margin: 0;
+    padding: 10px;
+  }
 
-            main p{
-                margin-top: 0;
-                padding: 10px 5px 0px 20px;
-                font-size: 12px;
-                text-align: justify;
-            }
+  main h2 {
+    margin-top: 5px;
+    font-size: 1em;
+  }
 
-            .imagens{
-                max-height: 100px;
-            }
-    
-            .imagens img{
-                max-width: 100px;
-                max-height: 100px;
-            }
+  main p {
+    margin-top: 0;
+    padding: 10px 5px 0px 20px;
+    font-size: 12px;
+    text-align: justify;
+  }
 
-            footer{
-                border-radius: 0;
-            }
+  .imagens {
+    max-height: 100px;
+  }
 
-            footer p{
-                font-size: 0.7em;
-            }
-        }
+  .imagens img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+  footer {
+    border-radius: 0;
+  }
+
+  footer p {
+    font-size: 0.7em;
+  }
+}
